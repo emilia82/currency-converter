@@ -10,9 +10,9 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-background-image: url(../image/backgroundimage.jpg);
-background-position: center;
-min-height: 115vh;
+  background-image: url(../image/backgroundimage.jpg);
+  background-position: center;
+  min-height: 115vh;
   font-family: 'Anton', sans-serif;
   font-family: 'Antonio', sans-serif;
   font-family: 'Open Sans', sans-serif;
