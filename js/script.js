@@ -1,9 +1,10 @@
-let inputElement = document.querySelector(".js-input");
-let sumbmitElement = document.querySelector(".js-submit")
-let resultElement = document.querySelector(".js-result");
-let formElement = document.querySelector(".js-form");
+{
+    const inputElement = document.querySelector(".js-input");
+const sumbmitElement = document.querySelector(".js-submit")
+const resultElement = document.querySelector(".js-result");
+const formElement = document.querySelector(".js-form");
 
-let euro = 4.55;
+const euro = 4.55;
 
 formElement.addEventListener("submit", (event) => {
     event.preventDefault();
@@ -11,8 +12,10 @@ formElement.addEventListener("submit", (event) => {
 
 
 sumbmitElement.addEventListener("click", () => {
-    let result = inputElement.value / euro;
+    const result = inputElement.value / euro;
 
     resultElement.innerText = result.toFixed(2) +   "  €";
 });
+
+}
 
