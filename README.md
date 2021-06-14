@@ -4,7 +4,14 @@
 
 ![Tekst](https://github.com/emilia82/currency-converter/blob/main/image/icon-CC.jpg?raw=true)
 
-Description
+## Technology used: 
+
+- HTML
+- CSS /BEM 
+- Flexbox
+- Javascript
+
+## Description
 
 Simple and effective currency calculator. It Converts the number of zlotys entered by the user into Euro. 
 The result is shown under the calculator in the "Your Euro Score" section.
