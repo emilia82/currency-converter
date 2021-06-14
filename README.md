@@ -2,7 +2,7 @@
 
 ## Demo site: https://emilia82.github.io/currency-converter/
 
-![Tekst](https://github.com/emilia82/currency-converter/blob/main/image/cc.png?raw=true)
+![Tekst](https://github.com/emilia82/currency-converter/blob/main/image/icon-CC.jpg?raw=true)
 
 Description
 
@@ -21,3 +21,12 @@ Rezultat widoczny pod kalkulatorem w sekcji "Twój wynik Euro"
 
 W niedalekiej przyszłości program rozwijany będzie o możliwość przeliczania na inne waluty: 
 amerykański dolar, brytyjski funt, itd.
+
+## How to use it? 
+
+1. Enter Amount of money in PLN in form
+![enterAmount](https://github.com/emilia82/currency-converter/blob/main/image/enterAmountInForm.gif?raw=true)
+
+2. Click on Button "Przelicz"
+- the ammount in euros will appear under the button
+![ClickTheButton](https://github.com/emilia82/currency-converter/blob/main/image/clickTheButton.gif?raw=true)
