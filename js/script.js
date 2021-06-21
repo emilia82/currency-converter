@@ -33,7 +33,4 @@ sumbmitElement.addEventListener("click", () => {
                         day: "numeric",
                         weekday: "long",                                   
                     });               
-
-                ShowDateElement.innerText = ShowDate.formElement {todayDate} {newDate.toLocaleDateString()
-                  
-            }}};
+                }}
