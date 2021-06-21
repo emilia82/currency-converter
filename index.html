@@ -16,34 +16,40 @@
         <link href="css/style.css" rel="stylesheet">
         <link href="css/form.css" rel="stylesheet">
         <link href="css/container.css" rel="stylesheet">
+        <link href="css/data.css" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
         <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
         <script defer src="js/script.js"></script>
     </head>
     <body>
         <div class="container">
-            <p class="container__data js-data">Dzisiejsza data</p>
-        <form class="form js-form">
-            <fieldset class="form__fieldset">
-                <legend class="form__legend">
-                    Kalkulator Walutowy
-                </legend>
-                <p class="form__legendText"> /pole oznaczone * jest wymagane </p>
+            <p class="data js-data">Dzisiejsza data: </p>
+            <form class="form js-form">
+                <fieldset class="form__fieldset">
+                    <legend class="form__legend">
+                        Kalkulator Walutowy
+                    </legend>
+                    <p class="form__legendText"> /pole oznaczone * jest wymagane</p>
                     <label class="form__labelText">
                         PLN*
-                        <input class="js-input" type="number" min="0.01" step="any" required >
+                        <input
+                            class="js-input"
+                            type="number"
+                            min="0.01"
+                            step="any"
+                            required
+                        >
                     </label>
                     <p class="form__button">
                         <input class="form__button--input js-submit" type="submit" value="Przelicz!">
                     </p>
-            </fieldset>
-
-        </form>
-        <p class="form__result">Twój wynik Euro:    <strong class="js-result"></strong></p>
+                </fieldset>
+            </form>
+            <p class="form__result">Twój wynik Euro:
+                <strong class="js-result"></strong>
+            </p>
         </div>
     </body>
 </html>
-
-
