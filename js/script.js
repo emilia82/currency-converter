@@ -1,43 +1,49 @@
 {
-    const inputElement = document.querySelector(".js-input");
-    const sumbmitElement = document.querySelector(".js-submit")
-    const resultElement = document.querySelector(".js-result");
+    const calculateResult = (rateEUR, amount)
+    
+    const rateEUR = 4.56;
+
+    switch (currency) {
+
+        calculateResult = amount / rateEUR;
+    break;
+        }
+
+
+
+    const updateResultText = ({ amount, currency, result }) () => {
+        const resultElement = document.querySelector(".js-result");
+
+        resultElement.innerText = `${amount.toFixed(2)} PLN = <strong>${result.toFixed(2)} ${currency}</strong>`;   
+
+        };
+
+const onFormSubmit = (event) => {
+    event.preventDefault();
+
+    const amountElement = document.querySelector(".js-amount");
+    const currencyElement = document.querySelector(".js-currency");
+
+    const amount = +amountElement.value;
+        const currency = currencyElement.value;
+
+        const result = calculateResult(currency, amount);
+        updateResultText(amount, currency, result);
+
+
+
+}
+
+const init = () => {
     const formElement = document.querySelector(".js-form");
 
-    const euro = 4.55;
+    formElement.addEventListener("submit", onFormSubmit);
+    }; 
 
-    formElement.addEventListener("submit", (event) => {
-        event.preventDefault();
-    });
-
-    sumbmitElement.addEventListener("click", () => {
-        const result = inputElement.value / euro;
-
-        resultElement.innerText = result.toFixed(2) + "  €";
-    });
-
-}
-
-{
-    const ShowDateElement = document.querySelector(".js-data");
-
-    ShowDateElement = [todayDate, ShowDateElement]
+    init();
+};
 
 
-    const ShowDateElement = () => {
-        const newDate = new Date();
-        const todayDate = newDate.toLocaleDateString(
-            {
-                year: "numeric",
-                month: "long",
-                day: "numeric",
-                weekday: "long",
-            });
-    };
 
-    return (
-        <p className="date">
-            Dzisiejsza data: todayDate();
-        </p>
-    );
-}
+
+
