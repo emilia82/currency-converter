@@ -47,3 +47,26 @@ const init = () => {
 
 
 
+// {
+//     const ShowDateElement = document.querySelector(".js-data");
+
+//     ShowDateElement = [todayDate, ShowDateElement]
+
+
+//     const ShowDateElement = () => {
+//         const newDate = new Date();
+//         const todayDate = newDate.toLocaleDateString(
+//             {
+//                 year: "numeric",
+//                 month: "long",
+//                 day: "numeric",
+//                 weekday: "long",
+//             });
+//     };
+
+//     return (
+//         <p className="date">
+//             Dzisiejsza data: todayDate();
+//         </p>
+//     );
+// }
