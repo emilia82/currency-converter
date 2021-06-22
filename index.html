@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Kalkulator Walut</title>
+        <title>Kalkulator Walut z PLN na EUR</title>
         <meta property="og:image" content="image/cc.png">
         <link rel="icon" href="image/icon-CC.jpg">
         <link
@@ -17,6 +17,7 @@
         <link href="css/form.css" rel="stylesheet">
         <link href="css/container.css" rel="stylesheet">
         <link href="css/data.css" rel="stylesheet">
+        <link href="css/copyright.css" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
@@ -25,31 +26,39 @@
     </head>
     <body>
         <div class="container">
-            <p class="data js-data">Dzisiejsza data: </p>
+            <p class="data js-data">Dzisiejsza data:</p>
             <form class="form js-form">
                 <fieldset class="form__fieldset">
                     <legend class="form__legend">
-                        Kalkulator Walutowy
+                        Kalkulator Walutowy - przelicza PLN na EUR
                     </legend>
-                    <p class="form__legendText"> /pole oznaczone * jest wymagane</p>
-                    <label class="form__labelText">
-                        PLN*
+                    <label>
+                        <span class="form__labelText js-amount">Wpisz kwotę w PLN*</span>
                         <input
-                            class="js-input"
+                            class="form__input" 
                             type="number"
+                            placeholder="wpisz kwotę w PLN"
                             min="0.01"
                             step="any"
                             required
                         >
                     </label>
-                    <p class="form__button">
-                        <input class="form__button--input js-submit" type="submit" value="Przelicz!">
+                    <p>
+                        <label>
+                            <span class="form__labelText js-currency">Dzisiejszy kurs Euro: 4.56</span>
+                        </label>
+                    </p>
+                    <p class="form__result js-result">
+                        <strong></strong>
                     </p>
                 </fieldset>
-            </form>
-            <p class="form__result">Twój wynik Euro:
-                <strong class="js-result"></strong>
-            </p>
-        </div>
-    </body>
-</html>
+                <button class="form__button js-button">
+                    Przelicz kwotę
+                    <button>
+                    </form>
+
+                    <p class="copyright">Copyright  &copy; Emilia Warakomska 2021.</p>
+                    
+                </div>
+            </body>
+        </html>
