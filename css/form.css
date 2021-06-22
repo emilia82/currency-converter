@@ -23,6 +23,7 @@
     margin-right: 5px;
     font-size: 25px;
 }
+
 .form__labelText {
     font-size: 20px;
 }
@@ -49,7 +50,7 @@
     background-color: #70add7;
 }
 
-.form__button--input {
+.form__button {
     background-color: #1b445f;
     color: white;
     border: none; 
@@ -59,11 +60,11 @@
     font-size: 20px;
   
 }
-.form__button--input:hover {
+.form__button:hover {
     background-color: hsl(204, 56%, 44%);
 }
 
-.form__legendText {
+.form__Text {
 
     margin-right: 5px;
     font-size: 20px;
