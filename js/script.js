@@ -1,22 +1,34 @@
 {
-    const calculateResult = (rateEUR, amount)
     
-    const rateEUR = 4.56;
+    const calculateResult = (currency, amount) => {
+        
+        const rateEUR = 4.5649;
+        const rateUSD = 3.7855;
+        const rateGB = 5.2579; 
+        const rateCHF =  4.1148;
 
     switch (currency) {
+        case "EUR": 
+        return amount / rateEUR;
 
-        calculateResult = amount / rateEUR;
-    break;
-        }
+        case "USD":
+        return amount / rateUSD;
 
-
-
-    const updateResultText = ({ amount, currency, result }) () => {
+        case "GB": 
+        return amount / rateGB; 
+        
+        case "CHF":
+        return amount / rateCHF;
+    }
+    };
+    
+   
+    const updateResultText = ( currency, amount, result ) => {
         const resultElement = document.querySelector(".js-result");
 
         resultElement.innerText = `${amount.toFixed(2)} PLN = <strong>${result.toFixed(2)} ${currency}</strong>`;   
 
-        };
+    };
 
 const onFormSubmit = (event) => {
     event.preventDefault();
@@ -25,14 +37,12 @@ const onFormSubmit = (event) => {
     const currencyElement = document.querySelector(".js-currency");
 
     const amount = +amountElement.value;
-        const currency = currencyElement.value;
+    const currency = currency.value;
 
-        const result = calculateResult(currency, amount);
-        updateResultText(amount, currency, result);
+    const result = calculateResult(curency, amount);
+    updateResultText(amount, currency, result);
 
-
-
-}
+};
 
 const init = () => {
     const formElement = document.querySelector(".js-form");
@@ -41,16 +51,17 @@ const init = () => {
     }; 
 
     init();
-};
+}
+
 
 
 
 
 
 // {
-//     const ShowDateElement = document.querySelector(".js-data");
+//     const clock = document.querySelector(".js-clock");
 
-//     ShowDateElement = [todayDate, ShowDateElement]
+//     ShowDateElement = [todayDate, clock]
 
 
 //     const ShowDateElement = () => {
