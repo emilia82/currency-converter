@@ -16,7 +16,7 @@
         <link href="css/style.css" rel="stylesheet">
         <link href="css/form.css" rel="stylesheet">
         <link href="css/container.css" rel="stylesheet">
-        <link href="css/data.css" rel="stylesheet">
+        <link href="css/clock.css" rel="stylesheet">
         <link href="css/copyright.css" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
@@ -26,11 +26,11 @@
     </head>
     <body>
         <div class="container">
-            <p class="data js-data">Dzisiejsza data:</p>
+            <p class="clock js-clock">Dzisiejsza data: </p>
             <form class="form js-form">
                 <fieldset class="form__fieldset">
                     <legend class="form__legend">
-                        Kalkulator Walutowy - przelicza PLN na EUR
+                        Kalkulator Walutowy - przelicza PLN na waluty: EUR, USD, GB, CHF
                     </legend>
                     <label>
                         <span class="form__labelText js-amount">Wpisz kwotę w PLN*</span>
@@ -45,7 +45,13 @@
                     </label>
                     <p>
                         <label>
-                            <span class="form__labelText js-currency">Dzisiejszy kurs Euro: 4.56</span>
+                            <span class="form__labelText">Wybierz walutę:</span>
+                            <select class="form__select js-currency" name="currency">
+                                <option name="EUR" selected>EUR</option>
+                                <option name="USD">USD</option>
+                                <option name="GB">GB</option>
+                                <option name="CHF">CHF</option>
+                            </select>
                         </label>
                     </p>
                     <p class="form__result js-result"> Twój wynik: 
@@ -54,7 +60,7 @@
                 </fieldset>
                 <button class="form__button js-button">
                     Przelicz kwotę
-                    <button>
+                </button>
                     </form>
 
                     <p class="copyright">Copyright  &copy; Emilia Warakomska 2021.</p>
