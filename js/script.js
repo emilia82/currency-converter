@@ -24,11 +24,11 @@
     
    
     const updateResultText = ( currency, amount, result ) => {
-        const resultElement = document.querySelector(".js-result");
+        const resultElement = document.querySelector(".js-result"); 
 
         resultElement.innerText = `${amount.toFixed(2)} PLN = <strong>${result.toFixed(2)} ${currency}</strong>`;   
 
-    };
+    }
 
 const onFormSubmit = (event) => {
     event.preventDefault();
@@ -36,8 +36,8 @@ const onFormSubmit = (event) => {
     const amountElement = document.querySelector(".js-amount");
     const currencyElement = document.querySelector(".js-currency");
 
-    const amount = +amountElement.value;
-    const currency = currency.value;
+    const amount = +amountElement.value; 
+    const currency = currencyElement.value; 
 
     const result = calculateResult(curency, amount);
     updateResultText(amount, currency, result);
@@ -72,7 +72,7 @@ const init = () => {
     };
 
     return (
-        <p className="date">
+        <p class="date">
             Dzisiejsza data: todayDate();
         </p>
     );
