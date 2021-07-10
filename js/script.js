@@ -51,33 +51,29 @@ const init = () => {
     }; 
 
     init();
-}
+};
 
 
+{
+    const clock = document.querySelector(".js-clock");
+
+    ShowDateElement = [todayDate, clock]
 
 
+    const ShowDateElement = () => {
+        const newDate = new Date();
+        const todayDate = newDate.toLocaleDateString(
+            {
+                year: "numeric",
+                month: "long",
+                day: "numeric",
+                weekday: "long",
+            });
+    };
 
-
-// {
-//     const clock = document.querySelector(".js-clock");
-
-//     ShowDateElement = [todayDate, clock]
-
-
-//     const ShowDateElement = () => {
-//         const newDate = new Date();
-//         const todayDate = newDate.toLocaleDateString(
-//             {
-//                 year: "numeric",
-//                 month: "long",
-//                 day: "numeric",
-//                 weekday: "long",
-//             });
-//     };
-
-//     return (
-//         <p className="date">
-//             Dzisiejsza data: todayDate();
-//         </p>
-//     );
-// }
+    return (
+        <p className="date">
+            Dzisiejsza data: todayDate();
+        </p>
+    );
+};
