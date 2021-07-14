@@ -1,7 +1,10 @@
 {
+const amountElement = document.querySelector(".js-amount");
+const currencyElement = document.querySelector(".js-currency");
+const resultElement = document.querySelector(".js-result");
+const formElement = document.querySelector(".js-form");
 
-    const calculateResult = (currency, amount) => {
-
+    const calculateResult = (amount, currency) => {
         const rateEUR = 4.5649;
         const rateUSD = 3.7855;
         const rateGB = 5.2579;
@@ -22,60 +25,42 @@
         }
     };
 
-
-    const updateResultText = (currency, amount, result) => {
-        const resultElement = document.querySelector(".js-result");
-
-        resultElement.innerText = `${amount.toFixed(2)} PLN = <strong>${result.toFixed(2)} ${currency}</strong>`;
-
-    }
-
-    const onFormSubmit = (event) => {
+    formElement.addEventListener("submit", (event) => {
         event.preventDefault();
 
-        const amountElement = document.querySelector(".js-amount");
-        const currencyElement = document.querySelector(".js-currency");
-
+    
         const amount = +amountElement.value;
         const currency = currencyElement.value;
 
-        const result = calculateResult(curency, amount);
-        updateResultText(amount, currency, result);
+        const result = calculateResult(amount, currency);
 
-    };
-
-    const init = () => {
-        const formElement = document.querySelector(".js-form");
-
-        formElement.addEventListener("submit", onFormSubmit);
-    };
-
-    init();
+        resultElement.innerText = `${amount.toFixed(2)} PLN = <strong>${result.toFixed(2)} ${currency}</strong>`;
+    });
 };
 
 
-{
-    const clock = document.querySelector(".js-clock");
+// {
+//     const clock = document.querySelector(".js-clock");
 
-    ShowDateElement = (todayDate, clock);
+//     ShowDateElement = (todayDate, clock);
 
 
-    const ShowDateElement = () => {
-        const newDate = new Date();
-        const todayDate = newDate.toLocaleDateString(
-            {
-                year: "numeric",
-                month: "long",
-                day: "numeric",
-                weekday: "long",
-            });
+//     const ShowDateElement = () => {
+//         const newDate = new Date();
+//         const todayDate = newDate.toLocaleDateString(
+//             {
+//                 year: "numeric",
+//                 month: "long",
+//                 day: "numeric",
+//                 weekday: "long",
+//             });
     
 
-    return (
-        <p class="date">
-            Dzisiejsza data: todayDate();
-        </p>
-    );
+//     return (
+//         <p class="date">
+//             Dzisiejsza data: todayDate();
+//         </p>
+//     );
 
-    }
-};
+//     }
+// };
