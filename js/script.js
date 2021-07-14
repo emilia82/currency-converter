@@ -34,33 +34,33 @@ const formElement = document.querySelector(".js-form");
 
         const result = calculateResult(amount, currency);
 
-        resultElement.innerText = `${amount.toFixed(2)} PLN = <strong>${result.toFixed(2)} ${currency}</strong>`;
+        resultElement.innerText = `${amount.toFixed(2)} PLN = ${result.toFixed(2)} ${currency}`;
     });
 };
 
 
-// {
-//     const clock = document.querySelector(".js-clock");
+{
+    const clock = document.querySelector(".js-clock");
 
-//     ShowDateElement = (todayDate, clock);
+    ShowDateElement = (todayDate, clock);
 
 
-//     const ShowDateElement = () => {
-//         const newDate = new Date();
-//         const todayDate = newDate.toLocaleDateString(
-//             {
-//                 year: "numeric",
-//                 month: "long",
-//                 day: "numeric",
-//                 weekday: "long",
-//             });
+    const ShowDateElement = () => {
+        const newDate = new Date();
+        const todayDate = newDate.toLocaleDateString(
+            {
+                year: "numeric",
+                month: "long",
+                day: "numeric",
+                weekday: "long",
+            });
     
 
-//     return (
-//         <p class="date">
-//             Dzisiejsza data: todayDate();
-//         </p>
-//     );
+    return (
+        <p class="date">
+            Dzisiejsza data: todayDate();
+        </p>
+    );
 
-//     }
-// };
+    }
+};
