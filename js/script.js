@@ -39,13 +39,11 @@ const formElement = document.querySelector(".js-form");
 };
 
 
+
 {
     const clock = document.querySelector(".js-clock");
 
-    ShowDateElement = (todayDate, clock);
-
-
-    const ShowDateElement = () => {
+      const showDateElement = () => {
         const newDate = new Date();
         const todayDate = newDate.toLocaleDateString(
             {
@@ -53,14 +51,17 @@ const formElement = document.querySelector(".js-form");
                 month: "long",
                 day: "numeric",
                 weekday: "long",
+                hour: "numeric",
+                minute: "numeric",
+                second: "numeric"
             });
     
 
     return (
-        <p class="date">
-            Dzisiejsza data: todayDate();
-        </p>
-    );
 
+            `Dzisiejsza data: ${todayDate}`
+    
+    );
     }
+    clock.innerText = showDateElement();
 };
