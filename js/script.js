@@ -1,8 +1,8 @@
 {
-const amountElement = document.querySelector(".js-amount");
-const currencyElement = document.querySelector(".js-currency");
-const resultElement = document.querySelector(".js-result");
-const formElement = document.querySelector(".js-form");
+    const amountElement = document.querySelector(".js-amount");
+    const currencyElement = document.querySelector(".js-currency");
+    const resultElement = document.querySelector(".js-result");
+    const formElement = document.querySelector(".js-form");
 
     const calculateResult = (amount, currency) => {
         const rateEUR = 4.5649;
@@ -28,7 +28,7 @@ const formElement = document.querySelector(".js-form");
     formElement.addEventListener("submit", (event) => {
         event.preventDefault();
 
-    
+
         const amount = +amountElement.value;
         const currency = currencyElement.value;
 
@@ -43,7 +43,7 @@ const formElement = document.querySelector(".js-form");
 {
     const clock = document.querySelector(".js-clock");
 
-      const showDateElement = () => {
+    const showDateElement = () => {
         const newDate = new Date();
         const todayDate = newDate.toLocaleDateString(
             {
@@ -55,13 +55,13 @@ const formElement = document.querySelector(".js-form");
                 minute: "numeric",
                 second: "numeric"
             });
-    
 
-    return (
+
+        return (
 
             `Dzisiejsza data: ${todayDate}`
-    
-    );
+
+        );
     }
     clock.innerText = showDateElement();
 };

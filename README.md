@@ -32,8 +32,15 @@ amerykański dolar, brytyjski funt, itd.
 ## How to use it? 
 
 1. Enter Amount of money in PLN in form
-![enterAmount](https://github.com/emilia82/currency-converter/blob/main/image/enterAmountInForm.gif?raw=true)
 
-2. Click on Button "Przelicz"
-- the ammount in euros will appear under the button
-![ClickTheButton](https://github.com/emilia82/currency-converter/blob/main/image/clickTheButton.gif?raw=true)
+![enterAmount](https://github.com/emilia82/currency-converter/blob/main/image/step-1-enterAmount.gif?raw=true)
+
+2. Select currency 
+- You can select from four currencies 
+
+![selectCurrency](https://github.com/emilia82/currency-converter/blob/main/image/step-2-selectCurrency.gif?raw=true)
+
+3. Click on Button "Przelicz"
+- the result will appear under the button
+
+![clickButton](https://github.com/emilia82/currency-converter/blob/main/image/step-3-clickButton.gif?raw=true)
